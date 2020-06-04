@@ -1,4 +1,6 @@
-# All-India-Grievance-Reporting-App
+# All-India-Grievance-Reporting-App 
+
+Published Paper : https://www.irojournals.com/itdw/V2/I2/02.pdf
 
 All India Grievance Redressal App is developed using Java and XML. In this app, Complaints are categorized into two type viz. Complaint Type and Complaint sub-type in which complaints are classified into multiple complaint types like Solid Waste Management, Drainage, Storm Water drain, Road and Traffic, Factories, Licence, Water Supplies and many more. Complaint sub-type is the further categorisation of the particular complaint type. . In order to place any complaint, user must be registered with the app by providing simple details like name, email, mobile number, username and password, etc. User data and complaint related data is stored in Firebase Realtime database.
 I have removed *google_services.json* file. You can create your own firebase Project to generate it and include in this project.
