@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="outsideOverlay"
+    android:layout_gravity="center"
+    tools:context=".Home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        tools:context=".Home">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:textColor="#1D4419"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:textColor="#4E4E4E"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#731377"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <!-- 1 -->
+
+        <TextView
+            android:id="@+id/final_tc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bob"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider2" />
+
+        <TextView
+            android:id="@+id/tc_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Total complaints"
+            android:textAlignment="center"
+            android:textColor="#731377"
+            app:layout_constraintBottom_toBottomOf="@+id/final_tc_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar2"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            app:cpb_progress="100"
+            app:cpb_progress_max="100"
+            app:cpb_progressbar_color="#24709C"
+            app:cpb_progressbar_width="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/tc_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/final_tc_tv" />
+
+        <TextView
+            android:id="@+id/total_complaints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#193744"
+            android:textSize="32dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar2"
+            app:layout_constraintEnd_toEndOf="@+id/circularProgressBar2"
+            app:layout_constraintStart_toStartOf="@+id/circularProgressBar2"
+            app:layout_constraintTop_toTopOf="@+id/circularProgressBar2" />
+
+
+        <!-- 2 -->
+
+        <TextView
+            android:id="@+id/final_tsc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bob"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/final_tc_tv" />
+
+        <TextView
+            android:id="@+id/tsc_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="Total solved complaints"
+            android:textAlignment="center"
+            android:textColor="#731377"
+            app:layout_constraintBottom_toBottomOf="@+id/final_tsc_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar3"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            app:cpb_progress="100"
+            app:cpb_progress_max="100"
+            app:cpb_progressbar_width="2dp"
+            app:cpb_progressbar_color="#449C24"
+            app:layout_constraintBottom_toTopOf="@+id/tsc_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/final_tsc_tv" />
+
+        <TextView
+            android:id="@+id/total_solved_complaints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#193744"
+            android:textSize="32dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar3"
+            app:layout_constraintEnd_toEndOf="@+id/circularProgressBar3"
+            app:layout_constraintStart_toStartOf="@+id/circularProgressBar3"
+            app:layout_constraintTop_toTopOf="@+id/circularProgressBar3" />
+
+
+        <!-- 3 -->
+
+        <TextView
+            android:id="@+id/final_tusc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bob"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/final_tsc_tv" />
+
+        <TextView
+            android:id="@+id/tusc_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="Total unsolved complaints"
+            android:textAlignment="center"
+            android:textColor="#731377"
+            app:layout_constraintBottom_toBottomOf="@+id/final_tusc_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar4"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            app:cpb_progress="100"
+            app:cpb_progress_max="100"
+            app:cpb_progressbar_width="2dp"
+            app:cpb_progressbar_color="#9C2424"
+            app:layout_constraintBottom_toTopOf="@+id/tusc_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/final_tusc_tv" />
+
+        <TextView
+            android:id="@+id/total_unsolved_complaints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#193744"
+            android:textSize="32dp"
+            android:text="0"
+            app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar4"
+            app:layout_constraintEnd_toEndOf="@+id/circularProgressBar4"
+            app:layout_constraintStart_toStartOf="@+id/circularProgressBar4"
+            app:layout_constraintTop_toTopOf="@+id/circularProgressBar4" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/final_tusc_tv" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:background="#1A8017"
+            app:layout_constraintTop_toBottomOf="@+id/img"
+            tools:layout_editor_absoluteX="-23dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/img"
+            app:layout_constraintEnd_toEndOf="@+id/img"
+            app:layout_constraintStart_toStartOf="@+id/img"
+            app:layout_constraintTop_toTopOf="@+id/img" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

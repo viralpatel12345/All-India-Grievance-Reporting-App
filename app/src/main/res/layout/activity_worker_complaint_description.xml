@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_gravity="center"
+    tools:context=".WorkerComplaintDescription">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:paddingBottom="35dp"
+        tools:context=".WorkerComplaintDescription">
+
+
+        <ImageView
+            android:id="@+id/complaint_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/comp_status" />
+
+        <TextView
+            android:id="@+id/user_details_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#731377"
+            android:text="User Details"
+            android:padding="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/complaint_imageView" />
+
+        <TextView
+            android:id="@+id/username_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Name of the user"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="#193744"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_textView" />
+
+        <TextView
+            android:id="@+id/useremail_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="User email address"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/username" />
+
+        <TextView
+            android:id="@+id/useremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="#193744"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/useremail_textView" />
+
+        <ImageView
+            android:id="@+id/copy_useremail"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8.5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/useremail"
+            app:layout_constraintEnd_toEndOf="@+id/useremail"
+            app:layout_constraintTop_toTopOf="@+id/useremail"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/copy" />
+
+
+        <TextView
+            android:id="@+id/usermobile_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="User contact number"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/useremail" />
+
+        <TextView
+            android:id="@+id/usermobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="#193744"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usermobile_textView" />
+
+        <ImageView
+            android:id="@+id/copy_usermobile"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8.5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/usermobile"
+            app:layout_constraintEnd_toEndOf="@+id/usermobile"
+            app:layout_constraintTop_toTopOf="@+id/usermobile"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/copy" />
+
+        <TextView
+            android:id="@+id/userstate_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="User state"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/usermobile" />
+
+        <TextView
+            android:id="@+id/userstate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="#193744"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userstate_textView" />
+
+        <TextView
+            android:id="@+id/complaint_description_heading_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#731377"
+            android:padding="10dp"
+            android:text="Complaint Description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userstate" />
+
+        <TextView
+            android:id="@+id/complaint_id_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Complaint ID"
+            android:layout_marginTop="10dp"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider6" />
+
+        <TextView
+            android:id="@+id/complaint_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="#193744"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/complaint_id_textView" />
+
+        <TextView
+            android:id="@+id/complaint_type_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Complaint Type"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/complaint_id" />
+
+        <TextView
+            android:id="@+id/complaint_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:textColor="#193744"
+            android:text=""
+            android:background="@drawable/border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/complaint_type_textView" />
+
+        <TextView
+            android:id="@+id/complaint_sub_type_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Sub-complaint Type"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/complaint_type" />
+
+        <TextView
+            android:id="@+id/complaint_sub_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:textColor="#193744"
+            android:text=""
+            android:background="@drawable/border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/complaint_sub_type_textView" />
+
+        <TextView
+            android:id="@+id/complaint_description_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Complaint Description"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/complaint_sub_type" />
+
+        <TextView
+            android:id="@+id/complaint_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:textColor="#193744"
+            android:text=""
+            android:background="@drawable/border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/complaint_description_textView" />
+
+        <TextView
+            android:id="@+id/comp_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#772424"
+            android:text=""
+            android:textStyle="bold"
+            android:background="@drawable/border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/complaint_location_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Location Co-ordinates (Latitude , Longitude)"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/complaint_description" />
+
+        <TextView
+            android:id="@+id/location_coordinates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:textColor="#193744"
+            android:text=""
+            android:background="@drawable/border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/complaint_location_textView" />
+
+        <Button
+            android:id="@+id/openGoogleMap"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"
+            android:text="Open in Google Map"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#193744"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_coordinates" />
+
+        <TextView
+            android:id="@+id/area_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:text="State"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/openGoogleMap" />
+
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:textColor="#193744"
+            android:text=""
+            android:background="@drawable/border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/area_textview" />
+
+        <TextView
+            android:id="@+id/date_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Date of Complaint Raised"
+            android:textColor="#707070"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/area" />
+
+        <TextView
+            android:id="@+id/complaint_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="13sp"
+            android:textColor="#193744"
+            android:text=""
+            android:background="@drawable/border"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_textview" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/complaint_imageView"
+            app:layout_constraintEnd_toEndOf="@+id/complaint_imageView"
+            app:layout_constraintStart_toStartOf="@+id/complaint_imageView"
+            app:layout_constraintTop_toTopOf="@+id/complaint_imageView" />
+
+        <ImageView
+            android:id="@+id/copy_complaint_id"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8.5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/complaint_id"
+            app:layout_constraintEnd_toEndOf="@+id/complaint_id"
+            app:layout_constraintTop_toTopOf="@+id/complaint_id"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/copy" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#1A8017"
+            app:layout_constraintTop_toBottomOf="@+id/user_details_textView"
+            tools:layout_editor_absoluteX="-25dp" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#1A8017"
+            app:layout_constraintTop_toBottomOf="@+id/complaint_description_heading_textView"
+            tools:layout_editor_absoluteX="16dp" />
+
+
+        <TextView
+            android:id="@+id/solve_complaint_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="#731377"
+            android:padding="10dp"
+            android:text="Solve this complaint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/complaint_date" />
+
+
+        <ImageView
+            android:id="@+id/solved_complaint_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_menu_camera"
+            android:backgroundTint="#A0A0A0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+        <Button
+            android:id="@+id/solveComplaintButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#193744"
+            android:text="SOLVE THIS COMPLAINT"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:background="@drawable/border"
+            android:textStyle="bold"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/solved_complaint_imageView" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/solveComplaintButton" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#1A8017"
+            app:layout_constraintTop_toBottomOf="@+id/solve_complaint_heading"
+            tools:layout_editor_absoluteX="7dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

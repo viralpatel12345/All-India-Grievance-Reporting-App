@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">AIGRS</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="complaint_type">
+        <item>-</item>
+        <item>Roads and traffic</item>
+        <item>Solid Waste Management</item>
+        <item>Drainage</item>
+        <item>Storm water drain</item>
+        <item>Factories</item>
+        <item>Licence</item>
+        <item>Water Supply</item>
+        <item>Colony officer</item>
+        <item>Repairs to Municipal Property</item>
+        <item>Pest Control</item>
+        <item>Buildings</item>
+        <item>Health</item>
+        <item>Garden and Tree</item>
+        <item>Shops and Establishment</item>
+        <item>Estate</item>
+        <item>Encroachment</item>
+        <item>School or College</item>
+        <item>Sewerage Operation Control</item>
+    </string-array>
+</resources>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="outsideOverlay"
+    android:layout_gravity="center"
+    tools:context=".WorkerHome">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    tools:context=".WorkerHome">
+
+    <Button
+        android:id="@+id/getLocationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fetch current location"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#193744"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/location_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:text="CURRENT LOCATION"
+        android:textColor="#731377"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getLocationButton" />
+
+    <TextView
+        android:id="@+id/current_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:text="400706"
+        android:textColor="#193744"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_tv" />
+
+    <!-- 1 -->
+
+    <TextView
+        android:id="@+id/final_tc_tv"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bob"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/tc_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:text="Total complaints"
+        android:textAlignment="center"
+        android:textColor="#731377"
+        app:layout_constraintBottom_toBottomOf="@+id/final_tc_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar2"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        app:cpb_progress="100"
+        app:cpb_progress_max="100"
+        android:visibility="gone"
+        app:cpb_progressbar_color="#24709C"
+        app:cpb_progressbar_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/tc_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/final_tc_tv" />
+
+    <TextView
+        android:id="@+id/total_complaints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#193744"
+        android:textSize="32dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar2"
+        app:layout_constraintEnd_toEndOf="@+id/circularProgressBar2"
+        app:layout_constraintStart_toStartOf="@+id/circularProgressBar2"
+        app:layout_constraintTop_toTopOf="@+id/circularProgressBar2" />
+
+
+    <!-- 2 -->
+
+    <TextView
+        android:id="@+id/final_tsc_tv"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:background="@drawable/bob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/final_tc_tv" />
+
+    <TextView
+        android:id="@+id/tsc_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:text="Total solved complaints"
+        android:textAlignment="center"
+        android:textColor="#731377"
+        app:layout_constraintBottom_toBottomOf="@+id/final_tsc_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar3"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        app:cpb_progress="100"
+        android:visibility="gone"
+        app:cpb_progress_max="100"
+        app:cpb_progressbar_width="2dp"
+        app:cpb_progressbar_color="#449C24"
+        app:layout_constraintBottom_toTopOf="@+id/tsc_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/final_tsc_tv" />
+
+    <TextView
+        android:id="@+id/total_solved_complaints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#193744"
+        android:textSize="32dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar3"
+        app:layout_constraintEnd_toEndOf="@+id/circularProgressBar3"
+        app:layout_constraintStart_toStartOf="@+id/circularProgressBar3"
+        app:layout_constraintTop_toTopOf="@+id/circularProgressBar3" />
+
+
+    <!-- 3 -->
+
+    <TextView
+        android:id="@+id/final_tusc_tv"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:background="@drawable/bob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/final_tsc_tv" />
+
+    <TextView
+        android:id="@+id/tusc_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:text="Total unsolved complaints"
+        android:textAlignment="center"
+        android:textColor="#731377"
+        app:layout_constraintBottom_toBottomOf="@+id/final_tusc_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar4"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        app:cpb_progress="100"
+        android:visibility="gone"
+        app:cpb_progress_max="100"
+        app:cpb_progressbar_width="2dp"
+        app:cpb_progressbar_color="#9C2424"
+        app:layout_constraintBottom_toTopOf="@+id/tusc_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/final_tusc_tv" />
+
+    <TextView
+        android:id="@+id/total_unsolved_complaints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#193744"
+        android:textSize="32dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar4"
+        app:layout_constraintEnd_toEndOf="@+id/circularProgressBar4"
+        app:layout_constraintStart_toStartOf="@+id/circularProgressBar4"
+        app:layout_constraintTop_toTopOf="@+id/circularProgressBar4" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/final_tusc_tv" />
+
+    <TextView
+        android:id="@+id/refresh_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REFRESH"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:textColor="#731377"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_location" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#1A8017"
+        app:layout_constraintTop_toBottomOf="@+id/refresh_button"
+        tools:layout_editor_absoluteX="-23dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

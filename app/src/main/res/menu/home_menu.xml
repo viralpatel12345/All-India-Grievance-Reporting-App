@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item  android:id="@+id/share"
+        android:title="Share"
+        android:iconTint="#FFFFFF"
+        android:icon="@drawable/ic_menu_share"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/refresh"
+        android:title="Refresh"
+        android:iconTint="@android:color/white"
+        android:icon="@android:drawable/stat_notify_sync"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/home"
+        android:title="HOME"
+        app:showAsAction="never" />
+
+    <item  android:id="@+id/complaint_section"
+        android:title="COMPLAINT DETAILS"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/search_complaint"
+                android:title="SEARCH COMPLAINT"
+                app:showAsAction="never" />
+
+            <item  android:id="@+id/solved_complaints"
+                android:title="COMPLAINTS SOLVED BY ME"
+                app:showAsAction="never" />
+
+
+            <item  android:id="@+id/unsolved_complaints"
+                android:title="UNSOLVED COMPLAINTS"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item  android:id="@+id/profile_section"
+        android:title="PROFILE DETAILS"
+        app:showAsAction="never">
+
+        <menu>
+            <item  android:id="@+id/profile"
+                android:title="EDIT PROFILE"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/change_password"
+                android:title="CHANGE PASSWORD"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+
+    <item  android:id="@+id/logout"
+        android:title="SIGN OUT"
+        app:showAsAction="never"/>
+
+</menu>
